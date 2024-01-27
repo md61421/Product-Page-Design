@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #d0eaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  width: 90%;
+  max-width: 46.875em;
+  display: flex;
+}
+
+.gallery {
+  flex-basis: 47%;
+  background: #241e20;
+  transform: scale(1.08);
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  padding-top: 6.25em;
+}
+
+.details {
+  flex-basis: 53%;
+  background: #fff;
+  padding: 2.5em;
+  padding-left: 3.75em;
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.details h1 {
+  color: #333;
+  font-size: 2.1875rem;
+}
+
+.details h2 {
+  color: #555;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.details h3 {
+  color: #00d874;
+  margin-bottom: 1.875em;
+}
+
+.details form {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.size__select {
+  display: flex;
+  align-items: center;
+  margin-top: 3.125em;
+}
+
+.size__select p {
+  width: 4.375em;
+}
+
+.size__select input:checked + span {
+  color: blue;
+  font-weight: 600;
+}
+
+.size__select input {
+  display: none;
+}
+
+.size__select span {
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.color__select {
+  display: flex;
+  align-items: center;
+  margin-top: 1.25em;
+}
+
+.color__select p {
+  width: 4.6875em;
+}
+
+.color__select span {
+  display: inline-block;
+  width: 0.9375em;
+  height: 0.9375em;
+  border-radius: 50%;
+  margin-right: 0.9375em;
+  cursor: pointer;
+}
+
+.color__1 {
+  background: red;
+}
+.color__2 {
+  background: #00d874;
+}
+.color__3 {
+  background: blue;
+}
+.color__4 {
+  background: pink;
+}
+
+.color__select input {
+  display: none;
+}
+
+.color__select input:checked + span {
+  transform: scale(0.7);
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+.quantity__select {
+  display: flex;
+  align-items: center;
+  margin-top: 1.25em;
+}
+
+.quantity__select p {
+  width: 4.6875em;
+}
+
+.quantity__select input {
+  background: #eee;
+  border: 0;
+  outline: 0;
+  padding: 2px 2px 2px 15px;
+  width: 3.125em;
+  border-radius: 12px;
+}
+
+form button {
+  background: #553ff0;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  margin-top: 3.125em;
+  box-shadow: 0 10px 10px rgba(85, 63, 240, 0.25);
+  cursor: pointer;
+}
+
+.controls {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+
+.btn {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn.active {
+  background: #553ff0;
+}
